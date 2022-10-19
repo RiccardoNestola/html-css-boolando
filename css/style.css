@@ -8,6 +8,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 
 .flex_bet {
     display: flex;
@@ -25,10 +29,14 @@ body{
 }
 
 header{
+    width: 100%;
     background-color: #FF6900;
     flex-direction: column;
-    height: 55px;
+    height: 3.5rem;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 35%);
     /* margin-bottom: 2rem; */
+    position: fixed;
+    z-index: 2;
 }
 
 .container{
@@ -44,18 +52,22 @@ header{
     list-style: none;
     display: inline;
     color: white;
+    margin: 0 .3rem;
+    font-size: 0.6rem;
+    font-weight: bold;
 }
+
 
 .padding_bottom {
     padding-bottom: 2rem;
 }
 
 .list_product { 
-    /* width: 100%; */
     text-align: center;
     padding: 3rem 2rem;
     max-width: 1300px;
     margin: 0 auto;
+    padding-top: 6rem;
 } 
 
 
@@ -63,6 +75,62 @@ header{
 .card {
     display: inline-block;
 }
+
+.p_absolute {
+    position: absolute;
+}
+
+.p_relative {
+    position: relative;
+}
+
+.discount {
+    position: absolute;
+    bottom: 20%;
+    left: 8px;
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    padding: 0.2rem 0.5rem;
+    z-index: 1;
+}
+
+.sustainability {
+    position: absolute;
+    bottom: 20%;
+    left: 60px;
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    padding: 0.2rem 0.5rem;
+    z-index: 1;
+
+}
+
+.sustainability_only{
+    position: absolute;
+    bottom: 20%;
+    left: 8px;
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    padding: 0.2rem 0.5rem;
+    z-index: 1;
+
+}
+
+.fav{
+    position: absolute;
+    top: 3%;
+    right: 8px;
+    background-color: white;
+    padding: 0.4rem 0.8rem;
+    z-index: 1;
+}
+
 
 .product_img {
     width: 20rem;
@@ -87,10 +155,10 @@ div.product p {
 }
 
 .price{
-    font-size: 1.2rem;
-    padding-left: 0.5rem;  
+    font-size: .8rem;
+    padding-left: .5rem;  
     color:red;
-    font-weight: 500;
+    font-weight: 600;
 
 }
 
@@ -101,4 +169,9 @@ div.product p {
     color: #000;
     text-decoration: line-through;
 
+}
+
+
+img.hover{
+    display: none;
 }
