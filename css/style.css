@@ -34,7 +34,6 @@ header{
     flex-direction: column;
     height: 3.5rem;
     box-shadow: 0 5px 20px rgb(0 0 0 / 35%);
-    /* margin-bottom: 2rem; */
     position: fixed;
     z-index: 2;
 }
@@ -174,4 +173,17 @@ div.product p {
 
 img.hover{
     display: none;
+}
+
+.product:hover .hover {
+    display:block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+}
+
+.fav:hover{
+    color: red;
 }
