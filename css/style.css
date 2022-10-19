@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header{
+    background-color: #FF6900;
+    flex-direction: column;
+    height: 55px;
+}
+
+.container{
+    width: 80%;
+    margin: .8rem;
+}
+
+.logo{
+    height: 2rem;
+}
+
+ ul li {
+    list-style: none;
+    display: inline;
+    color: white;
+}
